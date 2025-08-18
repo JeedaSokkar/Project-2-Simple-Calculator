@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+.title{
+    color: brown;
+      font-family: "Rowdies", sans-serif;
+
+}
+
+.calc{
+    width:230px;
+    height: 320px;
+    background-color: brown;
+    padding: 15px;
+    border-radius: 10px;
+}
+.number{
+    margin-top: 20px;
+
+}
+.num{
+  background-color: aliceblue;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 14px;
+    transition: 0.3s;
+   
+}
+.num:hover{
+    transform: scale(1.1);
+}
+.spanNum{
+        padding: 3px;
+
+}
