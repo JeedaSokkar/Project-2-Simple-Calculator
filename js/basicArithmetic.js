@@ -12,14 +12,18 @@ function multiplication(x = 1, y = 1) {
   let mult = x * y;
   return mult;
 }
-
 function division(x = 1, y = 1) {
-  if (y === 0) {
-    alert("Division by zero is not allowed!");
-    return;
-  }
-  return x / y;
+    try {
+        if (y === 0) {
+            throw new Error("Division by zero is not allowed!");
+        }
+        return x / y;
+    } catch (e) {
+        console.log(e.message);
+        alert(e.message);
+    }
 }
+
 
 export class Calculator {
   calculate(x, y, operation) {
